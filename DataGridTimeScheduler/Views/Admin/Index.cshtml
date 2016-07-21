@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                            Employee Name
+                        </th>
+                        <th>
+                            Start Time</th>
+                        <th>
+                            BreakTimes
+                        </th>
+                        <th>
+                            Total Break
+                        </th>
+                        <th>
+                            End Time
+                        </th>
+                        <th>
+                            Total Worked
+                        </th>
+                        <th>
+                            Satisfactory
+                        </th>
+                        <th>
+                            Details
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for(var i=0 ;i<3;i++)
+                    {
+                        <tr>
+                            <td>Debashish
+                            </td>
+                            <td>10:00:00</td>
+                            <td>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Start Break
+                                            </th>
+                                            <th>End Break
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @for(var j=0 ;j<2;j++)
+                                        {
+                                            <tr>
+                                                <td>11:00:00
+                                                </td>
+                                                <td>12:00:00
+                                                </td>
+                                            </tr>
+                                        }
+
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td>02:00:00</td>
+                            <td>4:00:00</td>
+                            <td>8:00:00</td>
+                            <td>Yes</td>
+                            <td>Details
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
